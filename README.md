@@ -4,7 +4,7 @@
 ![todo-demo](./public/img/todo-demo.gif)
 
 ## Demo
-[TODO List (GitHub Pages)](https://mikeadamczyk.github.io/toDoList/)
+[TODO List (GitHub Pages)](https://mikeadamczyk.github.io/todo-list-react/)
 
 ## Description
 
