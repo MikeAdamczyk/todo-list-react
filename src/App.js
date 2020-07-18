@@ -9,7 +9,9 @@ import Footer from "./Footer";
 import Container from "./Container";
 
 const tasks = [
-  {id: 1, content: "Siema", done: true},
+  {id: 1, content: "kupić wodę", done: true},
+  {id: 2, content: "posprzątać biuro", done: false},
+  {id: 3, content: "pobiegać min. 30 min wieczorem", done: false},
 ];
 
 const hideDoneTasks = false;
