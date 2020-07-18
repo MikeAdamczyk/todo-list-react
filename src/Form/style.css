@@ -1,0 +1,48 @@
+.addTask__form {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .addTask__form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.addTask__input {
+    padding: 10px;
+    border: 2px solid #f2f2f2;
+}
+
+.addTask__button {
+    padding: 10px;
+    background-color: hsl(180, 100%, 25%);
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.addTask__button:hover {
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.addTask__button:active {
+    background-color: hsl(180, 100%, 45%);
+}
+
+@media(max-width: 767px) {
+    .addTask__button:hover {
+        background-color: hsl(180, 100%, 35%);
+        transform: scaleY(1.1);
+        cursor: pointer;
+    }
+    .addTask__button:active {
+        background-color: hsl(180, 100%, 45%);
+    }
+}

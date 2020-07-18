@@ -1,0 +1,72 @@
+.displayTasks__list {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    list-style: none;
+}
+
+.displayTasks__listItem {
+    padding: 10px;
+    border-bottom: 2px solid #f2f2f2;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.displayTasks__listItem--hidden {
+    display: none;
+}
+
+.displayTasks__content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+    text-align: justify;
+}
+
+.displayTasks__content--done {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.displayTasks__toggleDoneButton {
+    text-decoration: none;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 10px;
+    color: white;
+    background-color: hsl(120, 100%, 25%);
+    border: none;
+    transition: 0.5s;
+}
+
+.displayTasks__toggleDoneButton:hover {
+    background-color: hsl(120, 100%, 35%);
+    cursor: pointer;
+}
+
+.displayTasks__toggleDoneButton:active {
+    background-color: hsl(120, 100%, 45%);
+}
+
+.displayTasks__removeButton {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 10px;
+    color: white;
+    background-color: hsl(0, 100%, 40%);
+    border: none;
+    transition: 0.5s;
+}
+
+.displayTasks__removeButton:hover {
+    background-color: hsl(0, 100%, 50%);
+    cursor: pointer;
+}
+
+.displayTasks__removeButton:active {
+    background-color: hsl(0, 100%, 70%);
+}
