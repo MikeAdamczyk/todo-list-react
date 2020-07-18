@@ -14,6 +14,8 @@ Simple TODO List helps you to **plan your day** and **work more efficiently**. I
 - **HTML**
 - **CSS**
 - **JavaScript**
+- **React.js**
+- **create-react-app**
 
 ## Methodologies
 - **BEM**
