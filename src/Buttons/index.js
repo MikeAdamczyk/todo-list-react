@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 
-const Buttons = ({tasks, hideDoneTasks}) => (
+const Buttons = ({tasks, hideDone}) => (
 
     tasks.length > 0 && (
         <span className="displayTasks__buttonBox">
@@ -9,7 +9,7 @@ const Buttons = ({tasks, hideDoneTasks}) => (
               className="displayTasks__controlButtons"
               disabled={tasks.every(({done}) => !done)}
             >
-            {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            {hideDone ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button
               className="displayTasks__controlButtons"

@@ -14,7 +14,7 @@ const tasks = [
   {id: 3, content: "pobiegać min. 30 min wieczorem", done: false},
 ];
 
-const hideDoneTasks = false;
+const hideDone = false;
 
 function App() {
   return (
@@ -29,8 +29,8 @@ function App() {
 
         <SectionDisplayTasks
             title="Lista zadań"
-            extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>}
-            body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks}/>}
+            extraHeaderContent={<Buttons tasks={tasks} hideDone={hideDone}/>}
+            body={<Tasks tasks={tasks} hideDone={hideDone}/>}
         />
 
         <Footer title="© Michał Adamczyk 2020. Wszystkie prawa zastrzeżone!" />
