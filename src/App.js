@@ -8,18 +8,22 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Container from "./Container";
 
-const tasks = [
-  {id: 1, content: "kupić wodę", done: true},
-  {id: 2, content: "posprzątać biuro", done: false},
-  {id: 3, content: "pobiegać min. 30 min wieczorem", done: false},
-];
-
 function App() {
 
   const [hideDone, setHideDone] = useState(false);
 
+  const [tasks, setTasks] = useState([
+    {id: 1, content: "kupić wodę", done: true},
+    {id: 2, content: "posprzątać biuro", done: false},
+    {id: 3, content: "pobiegać min. 30 min wieczorem", done: false},
+  ]);
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone)
+  };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id))
   };
 
   return (
@@ -41,7 +45,7 @@ function App() {
               toggleHideDone={toggleHideDone}
             />
             }
-            body={<Tasks tasks={tasks} hideDone={hideDone}/>}
+            body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />}
         />
 
         <Footer title="© Michał Adamczyk 2020. Wszystkie prawa zastrzeżone!" />
