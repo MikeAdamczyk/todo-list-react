@@ -13,9 +13,7 @@ function App() {
   const [hideDone, setHideDone] = useState(false);
 
   const [tasks, setTasks] = useState([
-    {id: 1, content: "kupić wodę", done: true},
-    {id: 2, content: "posprzątać biuro", done: false},
-    {id: 3, content: "pobiegać min. 30 min wieczorem", done: false},
+    {id: 1, content: "przykładowe zadanie", done: false},
   ]);
 
   const toggleHideDone = () => {
