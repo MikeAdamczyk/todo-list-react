@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6e4db91d0f300e38453bbb094803d5b",
+    "revision": "d0aaf10da159a5d9e9a939da8b29d28c",
     "url": "/todo-list-react/index.html"
   },
   {
-    "revision": "bebe34295c7fa6cc85f2",
+    "revision": "c313e9c7620e5c09ec8f",
     "url": "/todo-list-react/static/css/main.fc5d9f53.chunk.css"
   },
   {
-    "revision": "21cccf955065d306d159",
-    "url": "/todo-list-react/static/js/2.f58a2cb7.chunk.js"
+    "revision": "3d6cb5e405fab4bd86e0",
+    "url": "/todo-list-react/static/js/2.49298c4f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/todo-list-react/static/js/2.f58a2cb7.chunk.js.LICENSE.txt"
+    "url": "/todo-list-react/static/js/2.49298c4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bebe34295c7fa6cc85f2",
-    "url": "/todo-list-react/static/js/main.c2111431.chunk.js"
+    "revision": "c313e9c7620e5c09ec8f",
+    "url": "/todo-list-react/static/js/main.c5c9a8fa.chunk.js"
   },
   {
     "revision": "d2ce1cbae4c6bd42d20e",
