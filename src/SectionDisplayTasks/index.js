@@ -1,18 +1,20 @@
 import React from "react";
 import "./style.css";
+import { Header, ListBox } from "./styled";
 
-const SectionDisplayTasks = ({title, body, extraHeaderContent} ) => (
 
-    <section className="displayTasks">
+const SectionDisplayTasks = ({ title, body, extraHeaderContent }) => (
 
-        <h2 className="displayTasks__header">
+    <section>
+
+        <Header>
             <span>{title}</span>
             {extraHeaderContent}
-        </h2>
+        </Header>
 
-        <div className="displayTasks__listBox">
+        <ListBox>
             {body}
-        </div>
+        </ListBox>
 
     </section>
 

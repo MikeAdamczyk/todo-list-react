@@ -7,6 +7,8 @@ import SectionDisplayTasks from "./SectionDisplayTasks";
 import Header from "./Header";
 import Footer from "./Footer";
 import Container from "./Container";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
 const getInitialTasks = () => {
   const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -65,40 +67,44 @@ function App() {
   };
 
   return (
-    <Container>
+    <ThemeProvider theme={theme}>
 
-      <Header title="Lista zadań" />
+      <Container>
 
-      <SectionAddTask
-        title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
-      />
+        <Header title="Lista zadań" />
 
-      <SectionDisplayTasks
-        title="Lista zadań"
-        extraHeaderContent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-          />
-        }
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
+        <SectionAddTask
+          title="Dodaj nowe zadanie"
+          body={<Form addNewTask={addNewTask} />}
+        />
 
-          />
+        <SectionDisplayTasks
+          title="Lista zadań"
+          extraHeaderContent={
+            <Buttons
+              tasks={tasks}
+              hideDone={hideDone}
+              toggleHideDone={toggleHideDone}
+              setAllDone={setAllDone}
+            />
+          }
+          body={
+            <Tasks
+              tasks={tasks}
+              hideDone={hideDone}
+              removeTask={removeTask}
+              toggleTaskDone={toggleTaskDone}
 
-        }
-      />
+            />
 
-      <Footer title="© Michał Adamczyk 2020. Wszystkie prawa zastrzeżone!" />
+          }
+        />
 
-    </Container>
+        <Footer title="© Michał Adamczyk 2020. Wszystkie prawa zastrzeżone!" />
+
+      </Container>
+
+    </ThemeProvider>
   );
 };
 
