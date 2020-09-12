@@ -1,26 +1,25 @@
 import React from "react";
-import "./style.css"
+import { ButtonBox, ControlButton } from "./styled";
 
-const Buttons = ({tasks, hideDone, toggleHideDone, setAllDone}) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
 
-    tasks.length > 0 && (
-        <span className="displayTasks__buttonBox">
-            <button
-              onClick={toggleHideDone}
-              className="displayTasks__controlButtons"
-              disabled={tasks.every(({done}) => !done)}
-            >
-            {hideDone ? "Pokaż" : "Ukryj"} ukończone
-            </button>
-            <button
-              onClick={setAllDone}
-              className="displayTasks__controlButtons"
-              disabled={tasks.every(({done}) => done)}
-            >
-            Ukończ wszystkie
-            </button>
-        </span>
-        )
+  tasks.length > 0 && (
+    <ButtonBox>
+      <ControlButton
+        onClick={toggleHideDone}
+        disabled={tasks.every(({ done }) => !done)}
+      >
+        {hideDone ? "Pokaż" : "Ukryj"} ukończone
+      </ControlButton>
+
+      <ControlButton
+        onClick={setAllDone}
+        disabled={tasks.every(({ done }) => done)}
+      >
+        Ukończ wszystkie
+      </ControlButton>
+    </ButtonBox>
+  )
 );
 
 export default Buttons;

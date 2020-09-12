@@ -96,7 +96,6 @@ function App() {
               toggleTaskDone={toggleTaskDone}
 
             />
-
           }
         />
 

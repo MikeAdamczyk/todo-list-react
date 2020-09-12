@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { FooterInfo } from "./styled";
 
-const Footer = ({title}) => (
-    <footer className="footer">
+const Footer = ({ title }) => (
+    <FooterInfo>
         {title}
-    </footer>
+    </FooterInfo>
 );
 
 export default Footer;

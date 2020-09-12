@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { Header } from "./styled";
 
-const SectionAddTask = ({title, body}) => (
+const SectionAddTask = ({ title, body }) => (
 
-    <section className="addTask">
-        <h2 className="addTask__header">{title}</h2>
+    <section>
+        <Header>{title}</Header>
         {body}
     </section>
 );

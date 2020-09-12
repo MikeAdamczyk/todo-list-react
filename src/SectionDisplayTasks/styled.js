@@ -7,8 +7,7 @@ export const Header = styled.h2`
     display: grid;
     grid-template-columns: 1fr auto;
 
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: auto;
     }
 `;
