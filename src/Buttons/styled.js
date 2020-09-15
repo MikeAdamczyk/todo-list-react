@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonBox = styled.span`
+export const Wrapper = styled.span`
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@ export const ButtonBox = styled.span`
 
 export const ControlButton = styled.button`
     font-size: 15px;
-    color: hsl(180, 100%, 25%);
+    color: ${({theme}) => theme.colors.teal};
     background: none;
     border: none;
     margin-left: 20px;
@@ -24,16 +24,16 @@ export const ControlButton = styled.button`
 
     &:hover {
         cursor: pointer;
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
 
     &:active {
         cursor: pointer;
-        color: hsl(180, 100%, 45%);
+        filter: brightness(120%);
     }
 
     &:disabled {
         cursor: pointer;
-        color: #ccc;
+        color: ${({theme}) => theme.colors.lightGrey};
     }
 `;
