@@ -59,5 +59,5 @@ export const useTasks = () => {
         toggleTaskDone,
         setAllDone,
         addNewTask
-    }
+    };
 };

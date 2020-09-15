@@ -1,5 +1,4 @@
 # Simple TODO List
-![icon check](./public/img/icon.png "TODO List logo")
 
 ![todo-demo](./public/img/todo-demo.gif)
 
@@ -12,13 +11,11 @@ Simple TODO List helps you to **plan your day** and **work more efficiently**. I
 
 ## Technology Stack
 - **HTML**
-- **CSS**
 - **JavaScript**
 - **React.js**
 - **create-react-app**
-
-## Methodologies
-- **BEM**
+- **custom hooks**
+- **styled-components**
 
 ## Contact
 hello@codeman.it
