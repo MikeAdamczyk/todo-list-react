@@ -1,10 +1,10 @@
 import React from "react";
-import { ButtonBox, ControlButton } from "./styled";
+import { Wrapper, ControlButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
 
   tasks.length > 0 && (
-    <ButtonBox>
+    <Wrapper>
       <ControlButton
         onClick={toggleHideDone}
         disabled={tasks.every(({ done }) => !done)}
@@ -18,7 +18,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
       >
         Ukończ wszystkie
       </ControlButton>
-    </ButtonBox>
+    </Wrapper>
   )
 );
 
