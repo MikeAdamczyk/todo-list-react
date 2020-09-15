@@ -10,7 +10,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     padding: 10px;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.concrete};
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
@@ -30,7 +30,7 @@ export const Content = styled.span`
 
     ${({ done }) => done && css`
         text-decoration: line-through;
-        color: #ccc;
+        color: ${({ theme }) => theme.colors.lightGrey};
     `}
 `;
 

@@ -15,7 +15,7 @@ export const Wrapper = styled.span`
 
 export const ControlButton = styled.button`
     font-size: 15px;
-    color: ${({theme}) => theme.colors.teal};
+    color: ${({ theme }) => theme.colors.teal};
     background: none;
     border: none;
     margin-left: 20px;
@@ -34,6 +34,6 @@ export const ControlButton = styled.button`
 
     &:disabled {
         cursor: pointer;
-        color: ${({theme}) => theme.colors.lightGrey};
+        color: ${({ theme }) => theme.colors.lightGrey};
     }
 `;

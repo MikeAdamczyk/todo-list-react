@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const InputForm = styled.form`
-    background-color: ${({theme})=> theme.colors.backgroundColor};
+export const StyledForm = styled.form`
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
     padding: 20px;
     margin-bottom: 10px;
     display: grid;
@@ -15,27 +15,27 @@ export const InputForm = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid ${({ theme }) => theme.colors.concrete};
 `;
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.colors.teal};
     border: none;
     color: white;
     transition: 0.5s;
 
     &:hover {
-    background-color: hsl(180, 100%, 35%);
-    transform: scale(1.1);
-    cursor: pointer;
+        filter: brightness(110%);
+        transform: scale(1.1);
+        cursor: pointer;
     }
 
     &:active {
-    background-color: hsl(180, 100%, 45%);
+        filter: brightness(120%);
     }
 
-    @media(max-width: 767px) {
+@media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         &:hover {
             transform: scaleY(1.1);
         }
