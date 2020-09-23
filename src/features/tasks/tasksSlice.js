@@ -4,9 +4,9 @@ const tasksSlice = createSlice({
     name: "tasks",
     initialState: {
         tasks: [{
-            content: "siema",
-            done: true,
-            id: 69,
+            content: "Pierwsze zadanie",
+            done: false,
+            id: 1,
         }],
         hideDone: false,
     },
