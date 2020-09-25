@@ -3,11 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const tasksSlice = createSlice({
     name: "tasks",
     initialState: {
-        tasks: [{
-            content: "Pierwsze zadanie",
-            done: false,
-            id: 1,
-        }],
+        tasks: [],
         hideDone: false,
     },
 
@@ -29,7 +25,7 @@ const tasksSlice = createSlice({
             state.tasks.map(task => task.done = true);
         },
 
-        removeTask: ({tasks}, {payload}) => {
+        removeTask: ({ tasks }, { payload }) => {
             const index = tasks.findIndex(({ id }) => id === payload);
             tasks.splice(index, 1);
         }
