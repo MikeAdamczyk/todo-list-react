@@ -1,5 +1,6 @@
 import React from "react";
-import { Wrapper, ControlButton } from "./styled";
+import { Wrapper } from "./styled";
+import { ControlButton } from "../ControlButtons";
 import { useSelector, useDispatch } from "react-redux";
 import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
 
