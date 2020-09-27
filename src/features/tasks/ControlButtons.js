@@ -11,7 +11,6 @@ export const ControlButton = styled.button`
     padding: 10px;
 
     ${({ exampleTasks }) => exampleTasks && css`
-        flex-grow: 1;
         text-align: right;
     `}
 
