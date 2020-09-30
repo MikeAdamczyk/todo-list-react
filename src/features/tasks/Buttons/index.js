@@ -2,11 +2,13 @@ import React from "react";
 import { Wrapper } from "./styled";
 import { ControlButton } from "../ControlButtons";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
+import { selectTasks, toggleHideDone, setAllDone, selectHideDone, selectIsEveryTaskDone } from "../tasksSlice";
 
 const Buttons = () => {
 
-  const { tasks, hideDone } = useSelector(selectTasks);
+  const tasks = useSelector(selectTasks);
+  const hideDone = useSelector(selectHideDone);
+  const everyTaskDone = useSelector(selectIsEveryTaskDone);
   const dispatch = useDispatch();
 
   return (
@@ -21,7 +23,7 @@ const Buttons = () => {
 
         <ControlButton
           onClick={() => dispatch(setAllDone())}
-          disabled={tasks.every(({ done }) => done)}
+          disabled={everyTaskDone}
         >
           Ukończ wszystkie
         </ControlButton>
