@@ -80,11 +80,11 @@ export const StyledNavLink = styled(Link)`
 
     &:hover {
         text-decoration: underline;
-        filter: brightness(120%);
+        filter: brightness(110%);
     }
 
     &:active {
-        filter: brightness(140%);
+        filter: brightness(120%);
     }
 
     ${({ done }) => done && css`

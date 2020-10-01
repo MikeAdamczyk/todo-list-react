@@ -4,8 +4,9 @@ export const StyledNavigation = styled.ul`
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
+    margin-bottom: -10px;
     background: ${({ theme }) => theme.colors.teal};
     text-decoration :none;
     color: white;
