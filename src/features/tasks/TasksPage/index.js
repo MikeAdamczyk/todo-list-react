@@ -23,7 +23,7 @@ function TasksPage() {
 
       <Search
         title="Wyszukiwarka zadań"
-        body={<Form />}
+        placeholder="Filtruj zadania"
       />
 
       <SectionDisplayTasks
