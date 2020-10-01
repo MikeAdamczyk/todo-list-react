@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -67,5 +68,27 @@ export const Button = styled.button`
         &:active{
             background-color: hsl(0, 100%, 70%);
         }
+    `}
+`;
+
+export const StyledNavLink = styled(Link)`
+
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.teal};
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+        filter: brightness(120%);
+    }
+
+    &:active {
+        filter: brightness(140%);
+    }
+
+    ${({ done }) => done && css`
+        text-decoration: line-through;
+        color: ${({ theme }) => theme.colors.lightGrey};
     `}
 `;

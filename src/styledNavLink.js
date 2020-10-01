@@ -8,13 +8,14 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
 }))`
     text-decoration: none;
     color: white;
+    font-size: 1.1em;
     padding: 5px;
-
-    &.${activeClassName} {
-        font-weight: bold;
-    }
 
     &:hover {
         border-bottom: solid 2px white;
+    }
+
+    &.${activeClassName} {
+        font-weight: bold;
     }
 `;

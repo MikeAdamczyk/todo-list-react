@@ -9,23 +9,22 @@ export const ControlButton = styled.button`
     margin-left: 20px;
     transition: 0.5s;
     padding: 10px;
+    cursor: pointer;
 
     ${({ exampleTasks }) => exampleTasks && css`
         text-align: right;
     `}
 
     &:hover {
-        cursor: pointer;
         filter: brightness(110%);
+        text-decoration: underline;
     }
 
     &:active {
-        cursor: pointer;
         filter: brightness(120%);
     }
 
     &:disabled {
-        cursor: pointer;
         color: ${({ theme }) => theme.colors.lightGrey};
     }
 `;
