@@ -4,18 +4,19 @@ import TasksPage from "./features/tasks/TasksPage/index";
 import SingleTaskPage from "./features/tasks/SingleTaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
 import { StyledNavLink } from "./styledNavLink";
+import { StyledNavigation, StyledItem } from "./styledNavigation";
 
 export default () => (
   <HashRouter>
     <nav>
-      <ul>
-        <li>
+      <StyledNavigation>
+        <StyledItem>
           <StyledNavLink to="/zadania">Zadania</StyledNavLink>
-        </li>
-        <li>
+        </StyledItem>
+        <StyledItem>
           <StyledNavLink to="/autor">O autorze</StyledNavLink>
-        </li>
-      </ul>
+        </StyledItem>
+      </StyledNavigation>
       <Switch>
         <Route path="/zadania/:id">
           <SingleTaskPage />

@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Montserrat', sans-serif;
         background-color: ${({ theme }) => theme.colors.concrete};
-        margin: 20px auto;
+        margin: 0px auto 20px;
         line-height: 1.4;
         color: rgb(49, 49, 49);
     }
