@@ -7,6 +7,7 @@ import SectionDisplayTasks from "./SectionDisplayTasks";
 import Header from "../../../common/Header";
 import Footer from "../../../common/Footer";
 import Container from "../../../common/Container";
+import Search from "./Search";
 
 function TasksPage() {
 
@@ -17,6 +18,11 @@ function TasksPage() {
 
       <SectionAddTask
         title="Dodaj nowe zadanie"
+        body={<Form />}
+      />
+
+      <Search
+        title="Wyszukiwarka zadań"
         body={<Form />}
       />
 
