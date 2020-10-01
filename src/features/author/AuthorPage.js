@@ -24,12 +24,11 @@ export default () => (
                     (głównie lambdy na AWS). Wielka satysfakcja płynąca z kreowania nowych funkcjonalności przy pomocy kodu oraz
                     konieczność
                     nieustającego rozwoju to niewątpliwe zalety branży IT, która każdego dnia wciąga mnie coraz
-                    bardziej.
+                    bardziej 🤩
                     </p>
 
-                    <p>Doświadczenie w projektowaniu odzieży i akcesoriów spowodowały, że <strong>moje zainteresowania
-                    skierowały mnie z pierwotnie praktykowanego backendu w stronę JavaScriptu i technologii
-                    frontendowych.</strong>
+                    <p>Wieloletnie doświadczenie w projektowaniu odzieży, nadruków i akcesoriów spowodowało, że moje pierwotne zainteresowanie
+                    backendem przesunęło się w stronę <strong>JS, React.js i innych technologii frontendowych.</strong>
                     </p>
                 </>
             }
