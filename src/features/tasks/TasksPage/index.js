@@ -4,11 +4,11 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import SectionAddTask from "./SectionAddTask";
 import SectionDisplayTasks from "./SectionDisplayTasks";
-import Header from "../../common/Header";
-import Footer from "../../common/Footer";
-import Container from "../../common/Container";
+import Header from "../../../common/Header";
+import Footer from "../../../common/Footer";
+import Container from "../../../common/Container";
 
-function Tasks() {
+function TasksPage() {
 
   return (
     <Container>
@@ -32,4 +32,4 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;

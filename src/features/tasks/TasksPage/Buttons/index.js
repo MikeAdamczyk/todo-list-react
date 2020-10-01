@@ -1,6 +1,6 @@
 import React from "react";
 import { Wrapper } from "./styled";
-import { ControlButton } from "../ControlButtons";
+import { ControlButton } from "../../ControlButtons";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectTasks,
@@ -9,7 +9,7 @@ import {
   selectHideDone,
   selectIsEveryTaskDone,
   selectIsTaskListEmpty
-} from "../tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = () => {
 

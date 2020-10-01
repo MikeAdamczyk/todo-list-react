@@ -1,8 +1,8 @@
 import React from "react";
-import { ControlButton } from "../ControlButtons";
+import { ControlButton } from "../../ControlButtons";
 import { Header, ButtonBox } from "./styled";
 import { useDispatch } from "react-redux";
-import { fetchExampleTasks } from "../tasksSlice";
+import { fetchExampleTasks } from "../../tasksSlice";
 
 const SectionAddTask = ({ title, body }) => {
 
