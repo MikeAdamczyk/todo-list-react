@@ -18,5 +18,6 @@ export const ListBox = styled.div`
 
     ${({ param }) => param === "author" && css`
         text-align: justify;
+        padding: 20px 30px;
     `}
 `;
