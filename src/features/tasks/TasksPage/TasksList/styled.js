@@ -23,11 +23,8 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-all;
-    hyphens: auto;
-    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     ${({ done }) => done && css`
         text-decoration: line-through;
