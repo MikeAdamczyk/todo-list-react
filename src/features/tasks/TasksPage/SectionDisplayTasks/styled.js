@@ -5,6 +5,7 @@ export const Header = styled.h2`
     padding: 20px;
     margin-bottom: 3px;
     display: grid;
+    word-break: break-all;
     grid-template-columns: 1fr auto;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
