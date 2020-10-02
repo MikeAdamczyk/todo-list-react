@@ -3,13 +3,13 @@ import Header from "../../../common/Header";
 import Footer from "../../../common/Footer";
 import Container from "../../../common/Container";
 import SectionDisplayTasks from "../TasksPage/SectionDisplayTasks";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 
 function SingleTaskPage() {
 
-    const {id} = useParams();
+    const { id } = useParams();
     const task = useSelector(state => getTaskById(state, id));
 
     return (
@@ -18,11 +18,13 @@ function SingleTaskPage() {
             <Header title="Szczegóły zadania" />
 
             <SectionDisplayTasks
-                title={task ? task.content : "Nie znaleziono zadania 😢"}
+                title={task === undefined ? "Nie znaleziono zadania 😢" : task.content}
                 body={
-                <>
-                <strong>Ukończono:</strong> {task.done ? "TAK" : "NIE"}
-                </>
+                    task === undefined
+                        ? ""
+                        : <>
+                            <strong>Ukończono:</strong> {task.done ? "TAK" : "NIE"}
+                        </>
                 }
             />
 
