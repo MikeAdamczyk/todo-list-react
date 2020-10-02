@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Header = styled.h2`
     background-color: ${({ theme }) => theme.colors.backgroundColor};
@@ -15,4 +15,8 @@ export const Header = styled.h2`
 export const ListBox = styled.div`
     background-color: ${({ theme }) => theme.colors.backgroundColor};
     padding: 20px;
+
+    ${({ param }) => param === "author" && css`
+        text-align: justify;
+    `}
 `;

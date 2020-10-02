@@ -12,6 +12,7 @@ export default () => (
         <Header title="O autorze" />
 
         <SectionDisplayTasks
+            param="author"
             title="Michał Adamczyk"
             body={
                 <>
