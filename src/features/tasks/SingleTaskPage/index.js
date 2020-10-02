@@ -18,14 +18,12 @@ function SingleTaskPage() {
             <Header title="Szczegóły zadania" />
 
             <SectionDisplayTasks
-                title={task === undefined ? "Nie znaleziono zadania 😢" : task.content}
-                body={
-                    task === undefined
-                        ? ""
-                        : <>
-                            <strong>Ukończono:</strong> {task.done ? "TAK" : "NIE"}
-                        </>
-                }
+                title={task ? task.content : "Nie znaleziono zadania 😢"}
+                body={!!task && (
+                    <>
+                        <strong>Ukończono:</strong> {task.done ? "TAK" : "NIE"}
+                    </>
+                )}
             />
 
             <Footer title="© Michał Adamczyk 2020. Wszystkie prawa zastrzeżone!" />
