@@ -31,8 +31,8 @@ const TasksList = () => {
             {task.done ? "✓" : ""}
           </Button>
 
-          <Content done={task.done}>
-            <StyledNavLink done={task.done} to={`/zadania/${task.id}`}>{task.content}</StyledNavLink>
+          <Content done={task.done ? 1 : 0}>
+            <StyledNavLink done={task.done ? 1 : 0} to={`/zadania/${task.id}`}>{task.content}</StyledNavLink>
           </Content>
 
           <Button
