@@ -7,7 +7,6 @@ export const ControlButton = styled.button`
     background: white;
     border: none;
     margin-left: 20px;
-    transition: 0.5s;
     padding: 10px;
     cursor: pointer;
 
@@ -16,8 +15,7 @@ export const ControlButton = styled.button`
     `}
 
     &:hover {
-        filter: brightness(110%);
-        text-decoration: underline;
+        font-weight: bold;
     }
 
     &:active {
